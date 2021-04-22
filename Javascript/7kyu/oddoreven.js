@@ -12,6 +12,4 @@ function oddOrEven(array) {
   } else {
     return 'odd'
   }
-  //enter code here
-
 }
