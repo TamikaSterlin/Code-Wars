@@ -5,11 +5,13 @@ remove the one with a lower index. If you get an empty array/list, return an emp
 Don't change the order of the elements that are left.*/
 
 function removeSmallest(numbers) {
-  let smallestNum = Math.min(...numbers)
+  let newArr = [...numbers]
+  let smallestNum = Math.min(...newArr)
   console.log(smallestNum)
-  let index = numbers.indexOf(smallestNum)
+  let index = newArr.indexOf(smallestNum)
   console.log(index)
-  numbers.splice(index, 1)
-  return numbers
+
+  newArr.splice(index, 1)
+  return newArr
 
 }
