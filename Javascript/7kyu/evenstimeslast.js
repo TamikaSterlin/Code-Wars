@@ -6,7 +6,7 @@ If the sequence is empty, you should return 0.*/
 
 
 function evenLast(numbers) {
-  let even = numbers.filter(num => num % 2 === 0)
+  let even = numbers.filter((num, i) => i % 2 === 0)
   console.log(even)
   return even.reduce((a, b) => b * numbers[numbers.length - 1] + a, 0)
 }
